@@ -22,7 +22,7 @@ st.success("✅ Acceso concedido")
 st.caption("Ingrese el código del producto para ver el detalle y saldo disponible.")
 
 # Enlace al archivo en Dropbox (modo directo)
-dropbox_url = "https://www.dropbox.com/scl/fi/0tulypcrt0kgc7ydxwp5c/Inventario-de-PT-02-AL-09-Mayo-2025.xlsx?rlkey=wnq9i8m6532gnbs4lv61ee5l8&st=jebvl180&dl=1"
+dropbox_url = "https://www.dropbox.com/scl/fi/0tulypcrt0kgc7ydxwp5c/Inventariovg.xlsx?rlkey=wnq9i8m6532gnbs4lv61ee5l8&st=jebvl180&dl=1"
 
 # Entrada de usuario
 codigo_input = st.text_input("Código del producto", placeholder="Ej. 401-0036")
