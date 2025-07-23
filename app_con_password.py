@@ -2,6 +2,12 @@
 import streamlit as st
 import pandas as pd
 
+from PIL import Image
+
+# Cargar y mostrar logo
+logo = Image.open("logo.png")
+st.image(logo, width=200)
+
 # Configuración de página
 st.set_page_config(page_title="Consulta de Inventario", layout="centered")
 
