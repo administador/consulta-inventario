@@ -38,8 +38,7 @@ if st.button("Buscar"):
         if not resultado.empty:
             detalle = resultado.iloc[0]['DETALLE']
             saldo = resultado.iloc[0]['Saldo Actual']
-            st.success(f"🧾 Detalle: {detalle}
-💼 Saldo Actual: {saldo}")
+            st.success(f"🧾 Detalle: {detalle}\n💼 Saldo Actual: {saldo}")
         else:
             st.warning("❌ Código no encontrado en el inventario.")
     except Exception as e:
