@@ -37,7 +37,7 @@ codigo_input = st.text_input("Código del producto", placeholder="Ej. 401-0036")
 if st.button("Buscar"):
     try:
         df = pd.read_excel(dropbox_url, sheet_name="Inv 2025", skiprows=5)
-        df.columns = ['CODIGO', 'CD', 'DETALLE', 'Saldo Anterior', 'Entradas', 'Salidas', 'Saldo Actual', 'PROD']
+        df.columns = ['CODIGO', 'CD', 'DETALLE', 'Saldo Anterior', 'Entradas', 'Salidas', 'Saldo Actual']
         df = df[df['CODIGO'].notna() & df['DETALLE'].notna()]
 
         resultado = df[df['CODIGO'].astype(str) == codigo_input.strip()]
