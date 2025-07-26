@@ -18,7 +18,7 @@ st.caption("Ingrese la contraseña para acceder a la app.")
 password = st.text_input("Contraseña", type="password")
 
 # Contraseña esperada (puedes cambiarla aquí)
-correct_password = "inventario2025"
+correct_password = "HHHHHinventario2025"
 
 if password != correct_password:
     st.warning("Debe ingresar la contraseña correcta para continuar.")
